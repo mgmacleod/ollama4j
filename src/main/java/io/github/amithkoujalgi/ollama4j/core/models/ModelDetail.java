@@ -4,7 +4,15 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class ModelDetail {
-    private String license, modelfile, parameters, template;
+    private String license, modelfile, parameters, template, system;
+
+    public String getSystem() {
+        return system;
+    }
+
+    public void setSystem(String system) {
+        this.system = system;
+    }
 
     public String getLicense() {
         return license;
